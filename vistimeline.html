@@ -13,6 +13,21 @@
     #visualization {
       border: 1px solid lightgray;
     }
+    .vis-item.red {
+      background-color: #ee8a8a;
+    }
+    .vis-item.green {
+      background-color: lightgreen;
+    }
+    .vis-item.yellow {
+      background-color: yellow;
+    }
+    .vis-item.blue {
+      background-color: lightblue;
+    }
+    .vis-item.purple {
+      background-color: #b78aee;
+    }
   </style>
 </head>
 <body>
@@ -31,6 +46,7 @@
       { name: "start", title: "Start", optional: false, type: "Date", description: "Some text", allowMultiple: false },
       { name: "end", title: "End", optional: true, type: "Date", description: "Some text", allowMultiple: false },
       { name: "group", title: "Group", optional: true, description: "Some text", allowMultiple: false },
+      { name: "className", title: "Color", optional: true, description: "any color between red, bleu, yellow, green, purple", allowMultiple: false },
     ], requiredAccess: 'read table'});
 
     grist.onRecords(function (records, mappings) {
