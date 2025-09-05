@@ -20,6 +20,10 @@
     .vis-item.green {
       background-color: lightgreen;
     }
+    .vis-item.darkgreen {
+      background-color: darkgreen;
+      color: white;
+    }
     .vis-item.orange {
       background-color: #e67a5c;
       color: white;
@@ -52,7 +56,7 @@
       { name: "start", title: "Start", optional: false, type: "Date", description: "Some text", allowMultiple: false },
       { name: "end", title: "End", optional: true, type: "Date", description: "Some text", allowMultiple: false },
       { name: "group", title: "Group", optional: true, description: "Some text", allowMultiple: false },
-      { name: "className", title: "Color", optional: true, description: "any color between red, bleu, yellow, green, purple", allowMultiple: false },
+      { name: "className", title: "Color", optional: true, description: "any color between red, bleu, yellow, green, darkgree, purple", allowMultiple: false },
     ], requiredAccess: 'read table'});
 
     grist.onRecords(function (records, mappings) {
@@ -77,3 +81,4 @@
 
 </body>
 </html>
+
